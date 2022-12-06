@@ -1,0 +1,9 @@
+.app{
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  
+}
+.Toastify__toast-container {
+  width: 700px;
+}
