@@ -34,7 +34,11 @@ function Intro() {
           </div>
         </div>
         <div className="relative hidden sm:block sm:w-1/3 lg:w-3/5">
-          <img src={securedev} className="max-w-xs m-auto md:max-w-sm" />
+          <img
+            src={securedev}
+            className="max-w-xs m-auto md:max-w-sm"
+            alt="secure user"
+          />
         </div>
       </div>
     </div>
