@@ -19,6 +19,7 @@ import Compare from "./containers/Compare/Compare";
 import Notepad from "./containers/Notepad/Notepad";
 import CodeSearch from "./containers/CodeSearch/CodeSearch";
 import IpAddress from "./containers/IpAddress/IpAddress";
+import Intro from "./compoenents/Intro/Intro";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         <ToastContainer position="top-center" className="w-1/2" />
       </div>
       <div className="mt-14">
+        <Intro />
+      </div>
+      <div className="mt-4">
         <Router>
           <AuthenticatedTemplate>
             <div className="flex flex-col gap-2 md:flex-row  justify-center ">

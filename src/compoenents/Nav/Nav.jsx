@@ -25,15 +25,15 @@ function Nav() {
 
   return (
     <div>
-      <nav className="bg-white dark:bg-gray-800 shadow fixed w-full">
-        <div className=" mx-auto px-2">
-          <div className="flex items-center justify-between h-12">
+      <nav className="bg-white  shadow fixed w-full">
+        <div className="container  mx-auto px-2">
+          <div className="flex items-center justify-between container max-w-7xl h-12">
             <div className=" flex items-center">
               <a
-                className="flex-shrink-0 text-2xl sm:text-xl text-gray-700 font-semibold dark:text-white py-4"
+                className="text-xl font-semibold text-gray-800 font-heading"
                 href="/"
               >
-                Shift F5
+                SHIFT F5
               </a>
             </div>
             <div className="block">
