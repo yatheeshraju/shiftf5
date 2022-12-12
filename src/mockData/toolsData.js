@@ -47,12 +47,12 @@ export const toolsData = [
     icon: " 🔎",
     desc: "A simple search code",
   },
-  {
-    name: "My IP Address",
-    id: "ip_address",
-    icon: " ℹ️",
-    desc: "get ip of a domain",
-  },
+  // {
+  //   name: "My IP Address",
+  //   id: "ip_address",
+  //   icon: " ℹ️",
+  //   desc: "get ip of a domain",
+  // },
   // {
   //   name: "Pomodoro",
   //   id: "focus_timer",
