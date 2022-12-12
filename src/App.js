@@ -19,24 +19,29 @@ import Compare from "./containers/Compare/Compare";
 import Notepad from "./containers/Notepad/Notepad";
 import CodeSearch from "./containers/CodeSearch/CodeSearch";
 import IpAddress from "./containers/IpAddress/IpAddress";
+import TermsAndConditions from "./containers/TermsAndConditions/TermsAndConditions";
 
 function App() {
   return (
-    <div className="app w-full h-screen">
+    <div className="flex flex-col  w-full h-screen">
       <div>
         <Nav />
         <ToastContainer position="top-center" className="w-1/2" />
       </div>
-      <div className="mt-4">
+      <div className="mt-4 h-5/6">
         <Router>
           <AuthenticatedTemplate>
             <div className="flex flex-col gap-2 md:flex-row  justify-center ">
               {/* <div className=" bg-white w-full shadow  shadow-slate-300 border-slate-300 md:w-1/6">
                 <ToolsList />
               </div> */}
-              <div className="w-full mt-6">
+              <div className="w-full mt-10">
                 <Routes>
                   <Route path="/" element={<Dashboard />} />
+                  <Route
+                    path="/termsandconditions"
+                    element={<TermsAndConditions />}
+                  />
                   <Route path="/timezones" element={<TimeZones />} />
                   <Route path="/json_formatter" element={<JsonFormatter />} />
                   <Route path="/base64_encode_decode" element={<Base64 />} />
@@ -60,9 +65,13 @@ function App() {
               {/* <div className=" bg-white w-full shadow  shadow-slate-300 border-slate-300 md:w-1/6">
                 <ToolsList />
               </div> */}
-              <div className=" w-full mt-6">
+              <div className=" w-full mt-10">
                 <Routes>
                   <Route path="/" element={<Dashboard />} />
+                  <Route
+                    path="/termsandconditions"
+                    element={<TermsAndConditions />}
+                  />
                   <Route path="/timezones" element={<TimeZones />} />
                   <Route path="/json_formatter" element={<JsonFormatter />} />
                   <Route path="/base64_encode_decode" element={<Base64 />} />

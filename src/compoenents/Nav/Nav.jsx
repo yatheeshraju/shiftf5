@@ -25,12 +25,12 @@ function Nav() {
 
   return (
     <div>
-      <nav className="bg-white  shadow fixed w-full">
+      <nav className="bg-white p-2 border border-gray-100 shadow fixed w-full z-50 dark:bg-zinc-800">
         <div className="container  mx-auto px-2">
           <div className="flex items-center justify-between container max-w-7xl h-12">
             <div className=" flex items-center">
               <a
-                className="text-xl font-semibold text-gray-800 font-heading"
+                className="text-2xl font-semibold text-gray-800 font-heading"
                 href="/"
               >
                 SHIFT F5
@@ -39,14 +39,21 @@ function Nav() {
             <div className="block">
               <div className="ml-4 flex items-center md:ml-6">
                 <div className="ml-3 relative">
-                  {/* <div className="relative inline-block text-left">
-                    <div>
-                      {!isAuthenticated && (
+                  <div className="relative inline-block text-left">
+                    <div className="flex gap-2">
+                      <a
+                        class="block mt-4 text-lg text-gray-900 lg:inline-block lg:mt-0 hover:text-gray-600"
+                        href="/termsandconditions"
+                      >
+                        Terms and Conditions
+                      </a>
+
+                      {/* {!isAuthenticated && (
                         <button
-                          className="py-2 px-4 flex justify-center items-center  bg-gray-600 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-gray-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
+                          className=" flex justify-center items-center text-xl"
                           onClick={() => handleLogin("redirect")}
                         >
-                          Login
+                          login
                         </button>
                       )}
                       {isAuthenticated && (
@@ -68,9 +75,9 @@ function Nav() {
                             <path d="M1523 1339q-22-155-87.5-257.5t-184.5-118.5q-67 74-159.5 115.5t-195.5 41.5-195.5-41.5-159.5-115.5q-119 16-184.5 118.5t-87.5 257.5q106 150 271 237.5t356 87.5 356-87.5 271-237.5zm-243-699q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5zm512 256q0 182-71 347.5t-190.5 286-285.5 191.5-349 71q-182 0-348-71t-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z"></path>
                           </svg>
                         </button>
-                      )}
+                      )} */}
                     </div>
-                    {isOpen && (
+                    {/* {isOpen && (
                       <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
                         <div
                           className="py-1 "
@@ -106,8 +113,8 @@ function Nav() {
                           </button>
                         </div>
                       </div>
-                    )}
-                  </div> */}
+                    )} */}
+                  </div>
                 </div>
               </div>
             </div>
