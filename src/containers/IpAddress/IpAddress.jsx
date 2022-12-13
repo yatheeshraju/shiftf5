@@ -55,18 +55,18 @@ function IpAddress() {
         <table className="table p-4 bg-white rounded-lg shadow">
           <thead>
             <tr>
-              <th className="border p-4 dark:border-dark-5 whitespace-nowrap font-normal text-gray-900">
+              <th className="border p-4 whitespace-nowrap font-normal text-gray-900">
                 IPV4
               </th>
-              <th className="border p-4 dark:border-dark-5 whitespace-nowrap font-normal text-gray-900">
+              <th className="border p-4  whitespace-nowrap font-normal text-gray-900">
                 IPV6
               </th>
             </tr>
           </thead>
           <tbody>
             <tr className="text-gray-700">
-              <td className="border p-4 dark:border-dark-5">{ipAddressv4}</td>
-              <td className="border p-4 dark:border-dark-5">{ipAddressv6}</td>
+              <td className="border p-4 ">{ipAddressv4}</td>
+              <td className="border p-4 ">{ipAddressv6}</td>
             </tr>
           </tbody>
         </table>

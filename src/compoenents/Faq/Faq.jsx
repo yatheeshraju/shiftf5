@@ -2,7 +2,7 @@ import React from "react";
 
 function Faq() {
   return (
-    <div className="z-20 px-14 flex items-center justify-center overflow-hidden  dark:bg-zinc-800">
+    <div className="z-20 px-14 flex items-center justify-center overflow-hidden ">
       <section className="text-gray-800">
         <h2 className="text-3xl font-bold mb-12 text-center">
           Frequently asked questions

@@ -25,7 +25,7 @@ function Nav() {
 
   return (
     <div>
-      <nav className="bg-white p-2 border border-gray-100 shadow fixed w-full z-50 dark:bg-zinc-800">
+      <nav className="bg-white p-2 border border-gray-100 shadow fixed w-full z-50 ">
         <div className="container  mx-auto px-2">
           <div className="flex items-center justify-between container max-w-7xl h-12">
             <div className=" flex items-center">
@@ -58,7 +58,7 @@ function Nav() {
                       )}
                       {isAuthenticated && (
                         <button
-                          className="  flex items-center justify-center w-full rounded-md  px-2 py-2 text-sm font-medium text-gray-700 dark:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-500"
+                          className="  flex items-center justify-center w-full rounded-md  px-2 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-500"
                           onClick={() => setIsOpen(!isOpen)}
                         >
                           <span className="px-2">
@@ -78,7 +78,7 @@ function Nav() {
                       )} */}
                     </div>
                     {/* {isOpen && (
-                      <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
+                      <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                         <div
                           className="py-1 "
                           role="menu"
@@ -87,7 +87,7 @@ function Nav() {
                         >
                           <a
                             href="/"
-                            className="block  px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600"
+                            className="block  px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 "
                             role="menuitem"
                           >
                             <span className="flex flex-col">
@@ -96,7 +96,7 @@ function Nav() {
                           </a>
                           <a
                             href="/"
-                            className="block  px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600"
+                            className="block  px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 "
                             role="menuitem"
                           >
                             <span className="flex flex-col">
@@ -104,7 +104,7 @@ function Nav() {
                             </span>
                           </a>
                           <button
-                            className="block  px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600"
+                            className="block  px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                             onClick={() => handleLogout("redirect")}
                           >
                             <span className="flex flex-col">

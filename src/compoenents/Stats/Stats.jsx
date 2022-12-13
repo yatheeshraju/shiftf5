@@ -2,7 +2,7 @@ import React from "react";
 import securedevw from "./secure_dev_w.svg";
 function Stats() {
   return (
-    <div className="z-20  flex items-center justify-center overflow-hidden bg-white dark:bg-zinc-800">
+    <div className="z-20  flex items-center justify-center overflow-hidden bg-white">
       <section className="mb-32 text-gray-800 text-center md:text-left">
         <div className="flex flex-wrap items-center">
           <div className="grow-0 shrink-0 basis-auto block lg:flex w-full lg:w-6/12 xl:w-4/12">
