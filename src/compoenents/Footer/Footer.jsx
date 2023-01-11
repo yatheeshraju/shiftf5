@@ -7,13 +7,19 @@ function Footer() {
         <div className="flex flex-col mt-4 md:mt-0 md:flex-row">
           <div className="flex items-center justify-center flex-1 mt-7 md:mt-0 md:items-start md:pl-5">
             <span className="mt-7 flex gap-2 md:mt-1">
-              <span> © 2022 Created by</span>
+              <a
+                class=" text-gray-900 lg:inline-block lg:mt-0 hover:text-gray-600"
+                href="/termsandconditions"
+              >
+                Terms and Conditions
+              </a>
+              {/* <span> © 2022 Created by</span>
               <a
                 className="underline hover:text-primary-gray-20"
                 href="https://www.linkedin.com/in/yatheeshkonduru/"
               >
                 Yatheesh
-              </a>
+              </a> */}
             </span>
           </div>
         </div>

@@ -10,11 +10,24 @@ function Intro({ handleShowPersonal }) {
             DON'T LEAK
             <span className="text-4xl sm:text-6xl">YOUR DATA</span>
           </h1>
-          <p className="text-sm text-gray-700 sm:text-base ">
-            Protect sensitive information from being accessed by un authorised
-            individuals. Dont let your tokens be used to infiltrate your own
-            systems. Try our free tools or Enterprise users please reach out to
-            us .
+          <p className="text-sm text-gray-700 sm:text-base p-4">
+            Don't let data leaks ruin your business .Protect your company's
+            valuable information. Try it out for yourself with our free trial
+            and see the difference it can make. Trust us, your clients will
+            thank you.
+          </p>
+          <p className="text-md font-bold text-gray-700 sm:text-base p-4 ">
+            But it isn't just about protection – it's also about convenience.
+            Our user-friendly interface makes it easy for your team to access
+            common tools without sacrificing security. Plus, our cloud-based
+            platform allows you to use from any device, anywhere, at any time.
+          </p>
+          <p className="text-sm text-gray-700 sm:text-base p-4">
+            Don't wait until it's too late to protect your company's sensitive
+            data. With our solution, you can take proactive steps to prevent
+            data leaks and keep your business safe. To know more about our
+            solution and how it can benefit your company please reach out to us
+            for more information.
           </p>
           <div className="flex mt-8">
             <button
