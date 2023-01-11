@@ -22,12 +22,17 @@ function Dashboard() {
       )}
       {!isAuthenticated && (
         <div className=" flex w-full  flex-col justify-center" id="dashboard">
-          <div className="mt-8 ">
-            <Intro handleShowPersonal={() => setshowPersonal(!showPersonal)} />
-          </div>
           <div className="mt-4 bg-white shadow shadow-slate-300 border-slate-300">
             {showPersonal && <ToolsList />}
           </div>
+          <div className="mt-8 ">
+            <Intro
+              handleShowPersonal={() => {
+                setshowPersonal(!showPersonal);
+              }}
+            />
+          </div>
+
           <div className="mt-4 bg-white shadow shadow-slate-300 border-slate-300">
             <Stats />
           </div>
