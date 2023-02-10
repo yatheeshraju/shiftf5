@@ -1,28 +1,29 @@
 import React from "react";
 import "./Nav.css";
-import { useMsal, useIsAuthenticated, useAccount } from "@azure/msal-react";
-import { loginRequest } from "../../authConfig";
-import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
+// import { useMsal, useIsAuthenticated, useAccount } from "@azure/msal-react";
+// import { loginRequest } from "../../authConfig";
+// import { useState } from "react";
 function Nav() {
-  const { instance, accounts } = useMsal();
-  const [isOpen, setIsOpen] = useState(false);
-  const isAuthenticated = useIsAuthenticated();
-  const account = useAccount(accounts[0] || {});
-  const handleLogin = (loginType) => {
-    if (loginType === "redirect") {
-      instance.loginRedirect(loginRequest).catch((e) => {
-        console.log(e);
-      });
-    }
-  };
+  // const { instance, accounts } = useMsal();
+  // const [isOpen, setIsOpen] = useState(false);
+  // const isAuthenticated = useIsAuthenticated();
+  // const account = useAccount(accounts[0] || {});
+  // const handleLogin = (loginType) => {
+  //   if (loginType === "redirect") {
+  //     instance.loginRedirect(loginRequest).catch((e) => {
+  //       console.log(e);
+  //     });
+  //   }
+  // };
 
-  const handleLogout = (logoutType) => {
-    if (logoutType === "redirect") {
-      instance.logoutRedirect({
-        postLogoutRedirectUri: "/",
-      });
-    }
-  };
+  // const handleLogout = (logoutType) => {
+  //   if (logoutType === "redirect") {
+  //     instance.logoutRedirect({
+  //       postLogoutRedirectUri: "/",
+  //     });
+  //   }
+  // };
 
   return (
     <div>
@@ -31,13 +32,26 @@ function Nav() {
           <div className="flex items-center justify-between container h-12">
             <div className=" flex items-center">
               <a
-                className="text-2xl font-semibold text-gray-800 font-heading"
+                className="text-2xl hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-6 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200  text-gray-600 dark:text-gray-400 "
                 href="/"
               >
-                SHIFT F5
+                shift+f5
               </a>
             </div>
-            <div>
+            <div className="flex items-center justify-between">
+              <a
+                className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-6 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200  text-gray-600 dark:text-gray-400  "
+                href="https://github.com/yatheeshraju/shiftf5"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span class="text-3xl">
+                  <FaGithub />
+                </span>
+                <span class="flex-grow text-right"></span>
+              </a>
+            </div>
+            {/* <div>
               <div className=" flex items-center">
                 <div>
                   <div className="relative inline-block text-left">
@@ -122,7 +136,7 @@ function Nav() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>
