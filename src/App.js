@@ -20,6 +20,7 @@ import Notepad from "./containers/Notepad/Notepad";
 import CodeSearch from "./containers/CodeSearch/CodeSearch";
 import IpAddress from "./containers/IpAddress/IpAddress";
 import TermsAndConditions from "./containers/TermsAndConditions/TermsAndConditions";
+import Footer from "./compoenents/Footer/Footer";
 
 function App() {
   return (
@@ -88,10 +89,12 @@ function App() {
                   <Route path="/ip_address" element={<IpAddress />} />
                 </Routes>
               </div>
+              <div></div>
             </div>
           </UnauthenticatedTemplate>
         </Router>
       </div>
+      <Footer />
     </div>
   );
 }

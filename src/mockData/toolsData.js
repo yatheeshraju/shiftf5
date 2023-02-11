@@ -41,12 +41,12 @@ export const toolsData = [
     icon: " 🏔️",
     desc: "A simple color picker",
   },
-  {
-    name: "Code Search",
-    id: "search",
-    icon: " 🔎",
-    desc: "A simple search code",
-  },
+  // {
+  //   name: "Code Search",
+  //   id: "search",
+  //   icon: " 🔎",
+  //   desc: "A simple search code",
+  // },
   // {
   //   name: "My IP Address",
   //   id: "ip_address",

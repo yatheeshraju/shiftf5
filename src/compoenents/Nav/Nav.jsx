@@ -45,10 +45,10 @@ function Nav() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <span class="text-3xl">
+                <span className="text-3xl">
                   <FaGithub />
                 </span>
-                <span class="flex-grow text-right"></span>
+                <span classname="flex-grow text-right"></span>
               </a>
             </div>
             {/* <div>
