@@ -30,6 +30,18 @@ export const toolsData = [
     desc: "simple base64 encoder and decoder",
   },
   {
+    name: "Base64 to Image",
+    id: "base64_image",
+    icon: " 📷",
+    desc: "preview base 64 image",
+  },
+  {
+    name: "Image to Base64",
+    id: "image_base64",
+    icon: " 📷",
+    desc: "convert image to base64",
+  },
+  {
     name: "URL Encode/Decode",
     id: "url_encode_decode",
     icon: " ⚱️",
@@ -41,6 +53,7 @@ export const toolsData = [
     icon: " 🏔️",
     desc: "A simple color picker",
   },
+
   // {
   //   name: "Code Search",
   //   id: "search",

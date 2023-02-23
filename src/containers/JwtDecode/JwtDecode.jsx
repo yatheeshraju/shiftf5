@@ -4,12 +4,10 @@ import jwt_decode from "jwt-decode";
 import Highlight from "react-highlight";
 import "../../../node_modules/highlight.js/styles/stackoverflow-light.css";
 import { toast } from "react-toastify";
-import { FaClipboardList } from "react-icons/fa";
 
 function JwtDecode() {
   const [inputTxt, setinputTxt] = useState();
   const [outputTxt, setoutputTxt] = useState();
-  const handleCopy = () => {};
   const handleDecode = () => {
     try {
       if (inputTxt !== null || inputTxt !== "") {
@@ -45,11 +43,6 @@ function JwtDecode() {
           </button>
         </div>
         <div className="flex flex-col w-full p-2">
-          <div className="text-right text-2xl">
-            <button onClick={handleCopy}>
-              <FaClipboardList />
-            </button>
-          </div>
           {outputTxt && (
             <Highlight className="language-javascript">
               {JSON.stringify(JSON.parse(outputTxt), null, 4)}

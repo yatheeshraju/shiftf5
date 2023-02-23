@@ -21,6 +21,8 @@ import CodeSearch from "./containers/CodeSearch/CodeSearch";
 import IpAddress from "./containers/IpAddress/IpAddress";
 import TermsAndConditions from "./containers/TermsAndConditions/TermsAndConditions";
 import Footer from "./compoenents/Footer/Footer";
+import Base64Image from "./containers/Base64Image/Base64Image";
+import ImageBase64 from "./containers/ImageBase64/ImageBase64";
 
 function App() {
   return (
@@ -29,7 +31,7 @@ function App() {
         <Nav />
         <ToastContainer position="top-center" className="w-1/2" />
       </div>
-      <div className="mt-4 h-5/6">
+      <div className="mt-4 min-h-5/6">
         <Router>
           <AuthenticatedTemplate>
             <div className="flex flex-col gap-2 md:flex-row  justify-center ">
@@ -87,6 +89,8 @@ function App() {
                   <Route path="/focus_timer" element={<Timer />} />
                   <Route path="/search" element={<CodeSearch />} />
                   <Route path="/ip_address" element={<IpAddress />} />
+                  <Route path="/base64_image" element={<Base64Image />} />
+                  <Route path="/image_base64" element={<ImageBase64 />} />
                 </Routes>
               </div>
               <div></div>
@@ -94,7 +98,9 @@ function App() {
           </UnauthenticatedTemplate>
         </Router>
       </div>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
