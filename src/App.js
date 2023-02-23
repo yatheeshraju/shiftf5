@@ -31,7 +31,7 @@ function App() {
         <Nav />
         <ToastContainer position="top-center" className="w-1/2" />
       </div>
-      <div className="mt-4 min-h-5/6">
+      <div className="mt-4">
         <Router>
           <AuthenticatedTemplate>
             <div className="flex flex-col gap-2 md:flex-row  justify-center ">
