@@ -1,5 +1,5 @@
 import "./App.css";
-import Nav from "./compoenents/Nav/Nav";
+import Nav from "./components/Nav/Nav";
 import {
   AuthenticatedTemplate,
   UnauthenticatedTemplate,
@@ -20,9 +20,10 @@ import Notepad from "./containers/Notepad/Notepad";
 import CodeSearch from "./containers/CodeSearch/CodeSearch";
 import IpAddress from "./containers/IpAddress/IpAddress";
 import TermsAndConditions from "./containers/TermsAndConditions/TermsAndConditions";
-import Footer from "./compoenents/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 import Base64Image from "./containers/Base64Image/Base64Image";
 import ImageBase64 from "./containers/ImageBase64/ImageBase64";
+import EpocToHuman from "./containers/EpocToHuman/EpocToHuman";
 
 function App() {
   return (
@@ -91,6 +92,7 @@ function App() {
                   <Route path="/ip_address" element={<IpAddress />} />
                   <Route path="/base64_image" element={<Base64Image />} />
                   <Route path="/image_base64" element={<ImageBase64 />} />
+                  <Route path="/epoc_to_human" element={<EpocToHuman />} />
                 </Routes>
               </div>
               <div></div>

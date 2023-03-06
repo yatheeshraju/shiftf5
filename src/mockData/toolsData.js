@@ -18,6 +18,12 @@ export const toolsData = [
     desc: "compare any two files",
   },
   {
+    name: "Epoc to Human Time",
+    id: "epoc_to_human",
+    icon: "⌚",
+    desc: "convert epoc to human time",
+  },
+  {
     name: "Notepad",
     id: "notepad",
     icon: "📝",

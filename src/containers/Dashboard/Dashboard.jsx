@@ -6,7 +6,7 @@ import React from "react";
 // import Footer from "../../compoenents/Footer/Footer";
 // import Intro from "../../compoenents/Intro/Intro";
 // import Stats from "../../compoenents/Stats/Stats";
-import ToolsList from "../../compoenents/ToolsList/ToolsList";
+import ToolsList from "../../components/ToolsList/ToolsList";
 
 function Dashboard() {
   // const [showPersonal, setshowPersonal] = useState(false);
