@@ -98,7 +98,7 @@ function EpocToHuman() {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://github.com/yatheeshraju/shiftf5/edit/master/src/containers/EpocToHuman/EpocToHuman.jsx"
+          href="https://github.dev/yatheeshraju/shiftf5/"
         >
           Add Formats / Contribute
         </a>
