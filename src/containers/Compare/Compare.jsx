@@ -7,6 +7,12 @@ function Compare() {
   const handleEditorDidMount = (editor, monaco) => {
     compareEditor.current = editor;
   };
+  const options = {
+    formatOnPaste: true,
+    formatOnType: true,
+     minimap: { enabled: true } ,
+     readOnly: true 
+  };
   const [input1, setinput1] = useState();
   const [input2, setinput2] = useState();
   return (
@@ -37,12 +43,12 @@ function Compare() {
       </div>
       <div className="flex items-center justify-center w-full">
         <DiffEditor
+         options={options}
           height="75vh"
           language="text"
           onMount={handleEditorDidMount}
           original={input1}
           modified={input2}
-          options={{ minimap: { enabled: false }, readOnly: true }}
         />
       </div>
     </div>

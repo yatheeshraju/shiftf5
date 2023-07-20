@@ -5,25 +5,16 @@ import { useRef } from "react";
 
 function JsonFormatter() {
   const mainEditor = useRef(null);
-  // const leftEditor = useRef(null);
-  // const rightEditor = useRef(null);
-  const handleEditorDidMount = (editor, monaco) => {
+
+  const handleEditorDidMount = (editor) => {
     mainEditor.current = editor;
   };
-  // const handleleftEditorDidMount = (editor, monaco) => {
-  //   leftEditor.current = editor;
-  // };
-  // const handlerightEditorDidMount = (editor, monaco) => {
-  //   rightEditor.current = editor;
-  // };
-  // const handleFormat = () => {
-  //   rightEditor.current.setValue(leftEditor.current.getValue());
-  //   rightEditor.current.getAction("editor.action.formatDocument").run();
-  // };
-  // const opt = {
-  //   formatOnPaste: true,
-  //   formatOnType: true,
-  // };
+
+  const options = {
+    formatOnPaste: true,
+    formatOnType: true,
+     minimap: { enabled: false } 
+  };
 
   const handleFormat = () => {
     mainEditor.current.getAction("editor.action.formatDocument").run();
@@ -60,6 +51,7 @@ function JsonFormatter() {
           >
             EXPAND
           </button>
+         
         </div>
       </div>
       <div className="flex items-center justify-center w-full">
@@ -68,7 +60,7 @@ function JsonFormatter() {
           language="json"
           onMount={handleEditorDidMount}
           defaultValue="paste your json ...."
-          options={{ minimap: { enabled: false } }}
+          options={options}
         />
       </div>
     </div>
