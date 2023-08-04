@@ -48,7 +48,7 @@ function Nav() {
                 <span className="text-3xl">
                   <FaGithub />
                 </span>
-                <span classname="flex-grow text-right"></span>
+                <span className="flex-grow text-right"></span>
               </a>
             </div>
             {/* <div>
