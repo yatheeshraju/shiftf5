@@ -3,6 +3,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { DiffEditor } from '@monaco-editor/react';
 import githubDark from 'monaco-themes/themes/Tomorrow-Night-Bright.json';
 import { useRef, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 export interface CompareProps {}
 
@@ -29,6 +30,9 @@ export default function Compare(props: CompareProps) {
 
   return (
     <div className="fira-code-regular">
+      <Helmet>
+        <title>Compare</title>
+      </Helmet>
       <div className="flex ">
         <Textarea
           placeholder="text 1"

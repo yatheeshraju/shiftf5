@@ -6,6 +6,7 @@ import Editor from '@monaco-editor/react';
 import { saveAs } from 'file-saver';
 import githubDark from 'monaco-themes/themes/Tomorrow-Night-Bright.json';
 import { useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 export interface NotepadProps {}
 
 export default function Notepad(props: NotepadProps) {
@@ -42,6 +43,9 @@ export default function Notepad(props: NotepadProps) {
   };
   return (
     <div className="flex relative fira-code-regular">
+      <Helmet>
+        <title>Notepad</title>
+      </Helmet>
       <Editor
         theme={theme === 'dark' ? 'githubDark' : 'vs-light'}
         height="90vh"

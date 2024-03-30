@@ -37,7 +37,7 @@ export default function Header(props: HeaderProps) {
               <DropdownMenuItem onClick={() => navigate('compare')}>
                 Comparator
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => navigate('comingsoon')}>
+              <DropdownMenuItem onClick={() => navigate('epoch')}>
                 Epoch
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => navigate('comingsoon')}>

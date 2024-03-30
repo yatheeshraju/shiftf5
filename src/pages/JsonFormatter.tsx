@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Editor, Monaco } from '@monaco-editor/react';
 import githubDark from 'monaco-themes/themes/Tomorrow-Night-Bright.json';
 import { MutableRefObject, useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 export interface JsonFormatterProps {}
 
 export default function JsonFormatter(props: JsonFormatterProps) {
@@ -38,6 +39,9 @@ export default function JsonFormatter(props: JsonFormatterProps) {
 
   return (
     <div className="flex relative fira-code-regular">
+      <Helmet>
+        <title>JSON Formatter</title>
+      </Helmet>
       <Editor
         theme={theme === 'dark' ? 'githubDark' : 'vs-light'}
         height="90vh"
