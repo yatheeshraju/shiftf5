@@ -1,19 +1,19 @@
 import { useTheme } from '@/components/ThemeProvider';
 import { Button } from '@/components/ui/button';
-import { Editor } from '@monaco-editor/react';
+import { Editor, Monaco } from '@monaco-editor/react';
 import githubDark from 'monaco-themes/themes/Tomorrow-Night-Bright.json';
-import { useRef } from 'react';
+import { MutableRefObject, useRef } from 'react';
 export interface JsonFormatterProps {}
 
 export default function JsonFormatter(props: JsonFormatterProps) {
   const { theme } = useTheme();
 
-  const mainEditor = useRef(null);
+  const mainEditor = useRef() as MutableRefObject<Monaco | null>;
 
-  const handleEditorDidMount = (editor: any) => {
-    mainEditor.current = editor;
+  const handleEditorDidMount = (monaco) => {
+    mainEditor.current = monaco;
   };
-  const handleEditorPreMount = (monaco: any) => {
+  const handleEditorPreMount = (monaco) => {
     monaco.editor.defineTheme('githubDark', githubDark);
   };
 
@@ -21,6 +21,7 @@ export default function JsonFormatter(props: JsonFormatterProps) {
     formatOnPaste: true,
     formatOnType: true,
     minimap: { enabled: false },
+    fontLigatures: 'true',
   };
 
   const handleFormat = () => {
@@ -36,7 +37,7 @@ export default function JsonFormatter(props: JsonFormatterProps) {
   };
 
   return (
-    <div className="flex relative">
+    <div className="flex relative fira-code-regular">
       <Editor
         theme={theme === 'dark' ? 'githubDark' : 'vs-light'}
         height="90vh"

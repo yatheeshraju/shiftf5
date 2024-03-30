@@ -37,23 +37,35 @@ export default function Header(props: HeaderProps) {
               <DropdownMenuItem onClick={() => navigate('compare')}>
                 Comparator
               </DropdownMenuItem>
-              <DropdownMenuItem>Epoc</DropdownMenuItem>
-              <DropdownMenuItem>Pomodoro</DropdownMenuItem>
-              <DropdownMenuItem>Notepad</DropdownMenuItem>
-              <DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('comingsoon')}>
+                Epoch
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('comingsoon')}>
+                Pomodoro
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('notepad')}>
+                Notepad
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('comingsoon')}>
                 <span className="flex gap-2 items-center">
                   Base64 <ArrowRightIcon />
                   Image
                 </span>
               </DropdownMenuItem>
-              <DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('comingsoon')}>
                 <span className="flex gap-2 items-center">
                   Image <ArrowRightIcon /> Base64
                 </span>
               </DropdownMenuItem>
-              <DropdownMenuItem>URL Encode Decode</DropdownMenuItem>
-              <DropdownMenuItem>Color Picker</DropdownMenuItem>
-              <DropdownMenuItem>IP Address</DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('comingsoon')}>
+                URL Encode Decode
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('comingsoon')}>
+                Color Picker
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('comingsoon')}>
+                IP Address
+              </DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem>
                 <Link

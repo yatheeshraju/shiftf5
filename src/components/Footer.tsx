@@ -3,8 +3,8 @@ export interface FooterProps {}
 export default function Footer(props: FooterProps) {
   return (
     <footer>
-      <div className="fixed bottom-0 container flex flex-col items-center justify-between gap-4 py-4">
-        <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
+      <div className="fixed bottom-0 w-full flex flex-col items-center justify-between gap-4 py-2">
+        <div className="flex flex-col items-center gap-4  md:flex-row md:gap-2 md:px-0">
           <p className="text-center text-sm leading-loose md:text-left">
             Built by{' '}
             <a
