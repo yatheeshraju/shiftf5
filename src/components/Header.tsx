@@ -1,0 +1,74 @@
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+import {
+  ArrowRightIcon,
+  GitHubLogoIcon,
+  HamburgerMenuIcon,
+  RocketIcon,
+} from '@radix-ui/react-icons';
+import { Link, useNavigate } from 'react-router-dom';
+import { ModeToggle } from './ModeToggle';
+export interface HeaderProps {}
+
+export default function Header(props: HeaderProps) {
+  const navigate = useNavigate();
+  return (
+    <nav className="flex p-2 sticky top-0 border-b">
+      <span className="flex  justify-between w-full">
+        <Link to="/" className="flex items-center gap-2">
+          <RocketIcon width={24} height={24} />{' '}
+          <span className="font-semibold">Shift F5</span>
+        </Link>
+        <span className="flex gap-2">
+          <ModeToggle />
+          <DropdownMenu>
+            <DropdownMenuTrigger id="endArrow">
+              <HamburgerMenuIcon width={20} height={20} />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem onClick={() => navigate('json_formatter')}>
+                JSON Formatter
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('compare')}>
+                Comparator
+              </DropdownMenuItem>
+              <DropdownMenuItem>Epoc</DropdownMenuItem>
+              <DropdownMenuItem>Pomodoro</DropdownMenuItem>
+              <DropdownMenuItem>Notepad</DropdownMenuItem>
+              <DropdownMenuItem>
+                <span className="flex gap-2 items-center">
+                  Base64 <ArrowRightIcon />
+                  Image
+                </span>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <span className="flex gap-2 items-center">
+                  Image <ArrowRightIcon /> Base64
+                </span>
+              </DropdownMenuItem>
+              <DropdownMenuItem>URL Encode Decode</DropdownMenuItem>
+              <DropdownMenuItem>Color Picker</DropdownMenuItem>
+              <DropdownMenuItem>IP Address</DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>
+                <Link
+                  to="https://github.com/yatheeshraju/shiftf5"
+                  target="_blank"
+                  className="flex gap-2 items-center"
+                >
+                  <GitHubLogoIcon />
+                  <span> GitHub</span>
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </span>
+      </span>
+    </nav>
+  );
+}
