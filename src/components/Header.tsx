@@ -51,7 +51,7 @@ export default function Header(props: HeaderProps) {
               <DropdownMenuItem onClick={() => navigate('colorpicker')}>
                 Color Picker
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => navigate('comingsoon')}>
+              <DropdownMenuItem onClick={() => navigate('ipaddress')}>
                 IP Address
               </DropdownMenuItem>
               <DropdownMenuSeparator />

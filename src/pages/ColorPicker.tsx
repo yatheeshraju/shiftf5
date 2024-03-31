@@ -1,5 +1,6 @@
 import { useTheme } from '@/components/ThemeProvider';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 export interface ColorPickerProps {}
 
@@ -11,6 +12,9 @@ export default function ColorPicker(props: ColorPickerProps) {
       className={`flex w-full h-[90vh] items-center justify-center`}
       style={{ backgroundColor: `${color}` }}
     >
+      <Helmet>
+        <title>Color Picker</title>
+      </Helmet>
       <span className="flex flex-col items-center gap-2">
         <span className="text-4xl">{color}</span>
         <input

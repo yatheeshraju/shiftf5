@@ -8,6 +8,7 @@ import ComingSoon from './pages/ComingSoon';
 import Compare from './pages/Compare';
 import Epoch from './pages/Epoch';
 import Home from './pages/Home';
+import IpAddress from './pages/IpAddress';
 import JsonFormatter from './pages/JsonFormatter';
 import NotFound from './pages/NotFound';
 import Notepad from './pages/Notepad';
@@ -27,6 +28,7 @@ function App() {
               <Route path="pomodoro" element={<Pomodoro />} />
               <Route path="comingsoon" element={<ComingSoon />} />
               <Route path="colorpicker" element={<ColorPicker />} />
+              <Route path="ipaddress" element={<IpAddress />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
