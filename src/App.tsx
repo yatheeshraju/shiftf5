@@ -3,6 +3,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Layout from './Layout';
+import ColorPicker from './pages/ColorPicker';
 import ComingSoon from './pages/ComingSoon';
 import Compare from './pages/Compare';
 import Epoch from './pages/Epoch';
@@ -25,6 +26,7 @@ function App() {
               <Route path="epoch" element={<Epoch />} />
               <Route path="pomodoro" element={<Pomodoro />} />
               <Route path="comingsoon" element={<ComingSoon />} />
+              <Route path="colorpicker" element={<ColorPicker />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>

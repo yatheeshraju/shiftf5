@@ -6,7 +6,6 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import {
-  ArrowRightIcon,
   GitHubLogoIcon,
   HamburgerMenuIcon,
   RocketIcon,
@@ -47,20 +46,9 @@ export default function Header(props: HeaderProps) {
                 Notepad
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => navigate('comingsoon')}>
-                <span className="flex gap-2 items-center">
-                  Base64 <ArrowRightIcon />
-                  Image
-                </span>
-              </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => navigate('comingsoon')}>
-                <span className="flex gap-2 items-center">
-                  Image <ArrowRightIcon /> Base64
-                </span>
-              </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => navigate('comingsoon')}>
                 URL Encode Decode
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => navigate('comingsoon')}>
+              <DropdownMenuItem onClick={() => navigate('colorpicker')}>
                 Color Picker
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => navigate('comingsoon')}>
