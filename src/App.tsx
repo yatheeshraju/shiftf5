@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import JsonFormatter from './pages/JsonFormatter';
 import NotFound from './pages/NotFound';
 import Notepad from './pages/Notepad';
+import Pomodoro from './pages/Pomodoro';
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
               <Route path="compare" element={<Compare />} />
               <Route path="notepad" element={<Notepad />} />
               <Route path="epoch" element={<Epoch />} />
+              <Route path="pomodoro" element={<Pomodoro />} />
               <Route path="comingsoon" element={<ComingSoon />} />
               <Route path="*" element={<NotFound />} />
             </Route>

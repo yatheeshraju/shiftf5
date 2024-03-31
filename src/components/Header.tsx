@@ -40,7 +40,7 @@ export default function Header(props: HeaderProps) {
               <DropdownMenuItem onClick={() => navigate('epoch')}>
                 Epoch
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => navigate('comingsoon')}>
+              <DropdownMenuItem onClick={() => navigate('pomodoro')}>
                 Pomodoro
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => navigate('notepad')}>
