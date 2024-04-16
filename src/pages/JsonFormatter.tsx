@@ -38,20 +38,11 @@ export default function JsonFormatter(props: JsonFormatterProps) {
   };
 
   return (
-    <div className="flex relative fira-code-regular">
+    <div className="flex flex-col fira-code-regular">
       <Helmet>
         <title>JSON Formatter</title>
       </Helmet>
-      <Editor
-        theme={theme === 'dark' ? 'githubDark' : 'vs-light'}
-        height="90vh"
-        language="json"
-        beforeMount={handleEditorPreMount}
-        onMount={handleEditorDidMount}
-        defaultValue={`{"key":"paste your json "}`}
-        options={options}
-      />
-      <div className="flex absolute  gap-2 w-full items-center justify-end px-4">
+      <div className="flex gap-2 absolute top-2 items-center ml-[60vw] justify-end px-4">
         <Button
           className="rounded-none"
           variant="default"
@@ -74,6 +65,15 @@ export default function JsonFormatter(props: JsonFormatterProps) {
           Expand
         </Button>
       </div>
+      <Editor
+        theme={theme === 'dark' ? 'githubDark' : 'vs-light'}
+        height="90vh"
+        language="json"
+        beforeMount={handleEditorPreMount}
+        onMount={handleEditorDidMount}
+        defaultValue={`{"key":"paste your json "}`}
+        options={options}
+      />
     </div>
   );
 }
